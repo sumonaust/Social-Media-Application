@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views
+from .views import post_list, post_details, signup_view, post_create, post_update, post_detele
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path("",post_list, name='post_list'),
